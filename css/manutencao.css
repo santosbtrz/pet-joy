@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: "KyivType";
+    src: url('fonts/KyivType-Sans-Regular2.woff') format('woff'),
+        url('fonts/KyivType-Sans-Regular3.woff') format('woff'),
+        url('fonts/KyivType-Sans-Bold.woff') format('woff'),
+        url('fonts/KyivType-Sans-Light.woff') format('woff');
+}
+
+html {
+    background-color: #775749;
+}
+
+body {
+    font-family: "KyivType", sans-serif !important;
+    background-color: #fdddc8 !important;
+    color: #775749 !important;
+}
+
+.profile {
+    display: flex;
+}
+
+.ctn-manutencao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+body {
+    background-color: #775749;
+    color: #775749;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: .5rem;
+    color: #775749;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: .5rem;
+    color: #775749;
+}
+
+a {
+    color: #775749;
+}
+
+img {
+    width: 200px;
+    margin: .5rem;
+}

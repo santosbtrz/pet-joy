@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: "KyivType";
+    src: url('fonts/KyivType-Sans-Regular2.woff') format('woff'),
+        url('fonts/KyivType-Sans-Regular3.woff') format('woff'),
+        url('fonts/KyivType-Sans-Bold.woff') format('woff'),
+        url('fonts/KyivType-Sans-Light.woff') format('woff');
+}
+
+html {
+    background-color: #fdddc8;
+}
+
+body {
+    font-family: "KyivType", sans-serif !important;
+    background-color: #fdddc8 !important;
+}
+
+
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    text-align: center;
+    flex: 1;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.menu-left,
+.menu-right {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-left a,
+.menu-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 901px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu-right a,
+    .menu-left a {
+        color: #775749;
+        font-weight: 600;
+    }
+
+    .logo {
+        text-align: center;
+        flex: 0;
+    }
+
+    .menu-left,
+    .menu-right {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .menu-mobile  {
+        display: none;
+    }
+
+    .ctn-login {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ctn-info {
+        background-color: #775749;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    form {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    @media (max-width: 500px) {
+        .ctn-login {
+            display: block !important;
+        }
+        
+        .ctn-info {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100% !important;
+            box-sizing: border-box !important; 
+        }
+
+        form {
+            width: 100% !important;
+        }
+
+    }
+
+
+    .menu-left, .menu-right {
+    display: none;
+    }
+    
+
+    .hamburger {
+    display: flex;
+    margin-top: 20px;
+    user-select: none;
+    }
+
+    .menu-mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    background-color: #5f3726a1;
+    gap: .3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    user-select: none;
+    }
+
+    .menu-mobile a {
+    padding: 10px;
+    color: #fdddc8;
+    }
+
+    .menu-mobile a:hover {
+    color: #000000
+    }
+
+    .logo img {
+    width: 130px;
+    height: 130px;
+    }
+
+
+    nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    align-items: flex-start;
+    }
+
+    .logo img {
+    width: 130px;
+    height: 130px;
+    }
+
+    .profile-icon img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    }
+
+    .ctn-login {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ctn-info {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    
+
+}
+
+@media (max-width: 1440px) {
+
+    @media (max-width: 700px) {
+        form {
+            width: 80% !important;
+        }
+    }
+
+    form {
+        width: 60%;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+}
+
+.ctn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ctn-info {
+    background-color: #775749;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.title-txt h3 {
+    font-size: 50px;
+}
+
+.title-txt {
+    color: #fdddc8;
+}
+
+@media (min-width: 1440px) {
+    #submit {
+        width: 300px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    }
+
+
+
+
+@media (min-width: 1500px) {
+    .menu-right a, .menu-left a {
+        font-size: 18px;
+    }
+}
+
+.login-invalido {
+    color: rgb(223, 129, 129);
+    font-weight: 700;
+    display: none;
+}
+
+.login-content p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+.login-container {
+    background-color: #775749;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    color: #fdddc8;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.esqueceu-senha {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.registro {
+    font-size: 14px;
+    margin-top: 1rem !important;
+    text-align: center;
+    color: #fdddc8ab;
+}
+
+.registro a {
+    color: #fdddc8;
+    text-decoration: underline;
+}
+
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #fdddc8;
+    border-radius: 8px;
+    background-color: #775749;
+    box-sizing: border-box;
+    box-shadow: 0px 0 9px #cccccc66;
+    color: #fdddc8;
+    font-size: 20px;
+    font-family: "KyivType", sans-serif !important;
+    margin-top: .5rem;
+}
+
+#submit {
+    padding: 12px;
+    background-color: #fdddc8;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #0000007d;
+    color: #fdddc8;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #5F3726;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "KyivType", sans-serif;
+}
+
+#submit:hover {
+    background-color: #fdddc8;
+}
+
+#senha {
+    margin-bottom: 0 !important;
+
+}
+
+.esqueceu-senha {
+    text-align: right;
+    color: #fdddc8ab;
+}
