@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 53" width="53" height="53">
+	<title>icon-voltar</title>
+	<defs>
+		<image  width="29" height="53" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAA1CAMAAACKshBmAAAAAXNSR0IB2cksfwAAADlQTFRFAAAA/d3I////////////qqqq////gICA2dnZ2dnZ2tra2dnZ2dnZ2NjYzMzM2tra2dnZ2dnZ29vbtK549AAAABN0Uk5TAP8DAgEDBAKV/1qi+ScFkPHiWzSklk8AAADESURBVHichdTNEsIgDATgBFpnvPj+T+ndvyJUQwssWQ7OuJ8M2CZRwUvLR1KMIR2/GVbcZK7LRxy1EJ5bEe21KL6BWrK8wLkWrE9wq/o9gTu32GmHrfbY6IBnHfGkAI8MYQ0hWorxH0/wl4eEcVerkwGL1joZsKhOMZODooaXh6doK9vrn0vuTP6v/6zIcybviLxfUhukrkhNknomvUD6iPQg6V/S+2RukJlD5hWZdWROkhkrcd1zxSrhmmstzlRumtf9C/gcOlEKKDXrAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="13" y="3"/>
+</svg>
