@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet.Joy - Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    
+
+
+    <nav>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div class="menu-left">
+            <a href="index.php">HOME</a>
+            <a href="cadastro.php">LOJA</a>
+        </div>
+        <div class="logo"><img src="images/petjoy-icon.png" alt="" onclick="redirecionar()"/></div>
+        
+        <div class="menu-right">
+            <a href="consulta.php">SERVIÇOS</a>
+            <a href="contato.html">CONTATO</a>
+        </div>
+    
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="index.php">HOME</a>
+            <a href="manutencao.html">LOJA</a>
+            <a href="consulta.php">SERVIÇOS</a>
+            <a href="contato.html">CONTATO</a>
+        </div>
+    
+        <div class="profile">
+            <div class="profile-icon">
+            <a href="login.html"><img src="images/profile-icon.png" alt="" /></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="ctn-login">
+        <div class="ctn-info">
+            <form action="processa_login.php" method="POST">
+                <div class="title-ctn">
+                    <div class="title-txt">
+                        <h3>LOGIN</h3>
+                        <p>bem-vindo(a) de volta!</p>
+                    </div>
+                </div>
+
+                    <div id="login-invalido" class="login-invalido">e-mail ou senha inválidos.</div>
+
+                <label for="email">e-mail</label>
+                <input type="email" id="email" name="email">    
+
+                <label for="senha">senha</label>
+                <input type="password" id="senha" name="senha">
+
+                <a href="#" class="esqueceu-senha">esqueceu a senha?</a>
+                <div class="button">
+                    <button type="submit" id="submit">ENTRAR</button>
+                </div>
+                <p class="registro">não possui conta?  <a href="cadastro.php">registrar-se</a></p>
+            </form>
+        </div>
+    </div>
+
+            
+        </div>
+    </main>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('erro') && urlParams.get('erro') === '1') {
+            document.getElementById('login-invalido').style.display = 'block';
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
+
+

@@ -1,0 +1,6 @@
+- COLOQUE NO MODO MOBILE DO DEVTOOLS PARA MELHOR VISUALIZAÇÃO
+
+PÁGINAS ACESSÍVEIS ATÉ O MOMENTO:
+
+> Menu Hamburguer -> Serviços
+> Ícone de Perfil -> Login -> Cadastro
